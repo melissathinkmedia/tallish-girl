@@ -84,6 +84,14 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/silk-satin-pants",
     season: "Summer 2026",
-    products: [],
+    products: [
+      {
+        name: "Larissa Satin Pant in Taupe",
+        brand: "All The Ways",
+        image: "/products/all-the-ways-larissa-satin-taupe.jpg",
+        href: "https://www.revolve.com/all-the-ways-larissa-satin-pant-in-taupe/dp/AAYR-WP31/",
+        tags: ["silk/satin pants", "high waist or slouchy", "relaxed leg", "cream", "brown", "summer 2026"],
+      },
+    ],
   },
 ];
