@@ -63,7 +63,7 @@ export const categories: Category[] = [
         brand: "Vero Moda Tall",
         image: "/products/vero-moda-tall-chocolate.png",
         href: "https://www.asos.com/us/vero-moda-tall/vero-moda-tall-dad-fit-tailored-pants-in-chocolate/prd/208884796?ctaRef=my+orders",
-        tags: ["brown", "extra wide leg", "36\" inseam", "lightweight", "workwear", "high waist or slouchy", "summer 2026"],
+        tags: ["brown", "extra wide leg", "32\" inseam", "lightweight", "workwear", "high waist or slouchy", "summer 2026"],
       },
     ],
   },
