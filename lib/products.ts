@@ -4,6 +4,7 @@ export type Product = {
   image: string;
   href: string;
   tags?: string[];
+  melApproved?: boolean;
 };
 
 export type Category = {
@@ -24,6 +25,7 @@ export const categories: Category[] = [
     coverImage: "/products/asos-palazzo-pants-oyster.jpg.avif",
     products: [
       {
+        melApproved: true,
         name: "Tall Tailored Unstructured Palazzo Pants in Oyster",
         brand: "ASOS Design",
         image: "/products/asos-palazzo-pants-oyster.jpg.avif",
@@ -31,6 +33,7 @@ export const categories: Category[] = [
         tags: ["36\" inseam", "extra wide leg", "summer", "satin/silk pants"],
       },
       {
+        melApproved: true,
         name: "Tall Linen Mix Pull-On Pants in Stone",
         brand: "ASOS Design",
         image: "/products/asos-linen-pants-stone.jpg.avif",
@@ -38,6 +41,7 @@ export const categories: Category[] = [
         tags: ["36\" inseam", "shrinks", "wide leg", "summer", "linen pants"],
       },
       {
+        melApproved: true,
         name: "Tall Pull-On Wide Leg Pants in Charcoal Pinstripes",
         brand: "JDY Tall",
         image: "/products/jdy-tall-charcoal-pinstripes.png",
@@ -59,6 +63,7 @@ export const categories: Category[] = [
         tags: ["extra wide leg", "36\" inseam", "lightweight", "workwear", "high waist or slouchy", "summer 2026", "cream"],
       },
       {
+        melApproved: true,
         name: "Tall Dad Fit Tailored Pants in Chocolate",
         brand: "Vero Moda Tall",
         image: "/products/vero-moda-tall-chocolate.png",
@@ -75,6 +80,7 @@ export const categories: Category[] = [
     coverImage: "/products/all-the-ways-larissa-satin-taupe.avif",
     products: [
       {
+        melApproved: true,
         name: "Larissa Satin Pant in Taupe",
         brand: "All The Ways",
         image: "/products/all-the-ways-larissa-satin-taupe.avif",
@@ -91,6 +97,7 @@ export const categories: Category[] = [
     coverImage: "/products/american-tall-relaxed-pull-on-espresso.webp",
     products: [
       {
+        melApproved: true,
         name: "Relaxed Pull-On Pants in Espresso",
         brand: "American Tall",
         image: "/products/american-tall-relaxed-pull-on-espresso.webp",
@@ -119,6 +126,7 @@ export const categories: Category[] = [
         tags: ["long sleeves", "summer 2026"],
       },
       {
+        melApproved: true,
         name: "Cotton Blend Tube Top in Espresso",
         brand: "American Tall",
         image: "/products/american-tall-tube-top-espresso.webp",
@@ -179,6 +187,7 @@ export const categories: Category[] = [
     coverImage: "/products/gap-cotton-gauze-barrel.avif",
     products: [
       {
+        melApproved: true,
         name: "Cotton Gauze Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-cotton-gauze-barrel.avif",
@@ -186,6 +195,7 @@ export const categories: Category[] = [
         tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
+        melApproved: true,
         name: "Linen-Blend Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-linen-blend-barrel.avif",
@@ -193,6 +203,7 @@ export const categories: Category[] = [
         tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
+        melApproved: true,
         name: "100% Linen Oversized Button-Down Shirt",
         brand: "Gap",
         image: "/products/gap-linen-oversized-shirt.avif",
@@ -200,6 +211,7 @@ export const categories: Category[] = [
         tags: ["summer 2026", "linen"],
       },
       {
+        melApproved: true,
         name: "GapFit Tech Windbreaker Jacket",
         brand: "Gap",
         image: "/products/gap-tech-windbreaker.avif",
@@ -207,6 +219,7 @@ export const categories: Category[] = [
         tags: ["activewear", "black", "summer 2026"],
       },
       {
+        melApproved: true,
         name: "GapFit Tech High Rise Running Shorts in Brown",
         brand: "Gap",
         image: "/products/gap-tech-shorts-1.avif",
@@ -214,6 +227,7 @@ export const categories: Category[] = [
         tags: ["activewear", "brown", "summer 2026"],
       },
       {
+        melApproved: true,
         name: "GapFit Tech High Rise Running Pants in Black",
         brand: "Gap",
         image: "/products/gap-tech-shorts-2.avif",
@@ -230,6 +244,7 @@ export const categories: Category[] = [
     coverImage: "/products/gap-cotton-gauze-barrel.avif",
     products: [
       {
+        melApproved: true,
         name: "Cotton Gauze Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-cotton-gauze-barrel.avif",
@@ -237,6 +252,7 @@ export const categories: Category[] = [
         tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
+        melApproved: true,
         name: "Linen-Blend Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-linen-blend-barrel.avif",
@@ -244,6 +260,7 @@ export const categories: Category[] = [
         tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
+        melApproved: true,
         name: "Relaxed Pull-On Pants in Espresso",
         brand: "American Tall",
         image: "/products/american-tall-relaxed-pull-on-espresso.webp",
@@ -274,6 +291,7 @@ export const categories: Category[] = [
     coverImage: "/products/abercrombie-crinkle-balloon-pant.jpg.avif",
     products: [
       {
+        melApproved: true,
         name: "Crinkle Balloon Pull-On Pant",
         brand: "Abercrombie & Fitch",
         image: "/products/abercrombie-crinkle-balloon-pant.jpg.avif",
@@ -297,6 +315,7 @@ export const categories: Category[] = [
     coverImage: "/products/all-the-ways-larissa-satin-taupe.avif",
     products: [
       {
+        melApproved: true,
         name: "Larissa Satin Pant in Taupe",
         brand: "All The Ways",
         image: "/products/all-the-ways-larissa-satin-taupe.jpg",

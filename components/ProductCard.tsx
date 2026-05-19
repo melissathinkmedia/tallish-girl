@@ -6,6 +6,7 @@ type Product = {
   image: string;
   href: string;
   tags?: string[];
+  melApproved?: boolean;
 };
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -34,18 +35,21 @@ export default function ProductCard({ product }: { product: Product }) {
         <div className="text-ink text-base font-semibold leading-snug tracking-tight">
           {product.name}
         </div>
-        {product.tags && product.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1.5">
-            {product.tags.map((tag) => (
-              <span
-                key={tag}
-                className="bg-bone text-ink-faint rounded-full px-2.5 py-0.5 text-xs"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-        )}
+        <div className="flex flex-wrap gap-1.5">
+          {product.melApproved && (
+            <span className="bg-rose/30 text-ink rounded-full px-2.5 py-0.5 text-xs font-semibold">
+              ✦ Mel Approved
+            </span>
+          )}
+          {product.tags?.map((tag) => (
+            <span
+              key={tag}
+              className="bg-bone text-ink-faint rounded-full px-2.5 py-0.5 text-xs"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="text-sand group-hover:text-ink-soft shrink-0 transition-colors">
