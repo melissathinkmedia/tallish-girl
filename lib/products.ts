@@ -88,6 +88,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/american-tall-pants",
     season: "Summer 2026",
+    coverImage: "/products/american-tall-relaxed-pull-on-espresso.webp",
     products: [
       {
         name: "Relaxed Pull-On Pants in Espresso",
@@ -138,6 +139,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/express-pants",
     season: "Summer 2026",
+    coverImage: "/products/express-low-slung-ivory-baggy.avif",
     products: [
       {
         name: "Low Slung Ivory Baggy Jeans",
@@ -174,6 +176,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/gap-pants",
     season: "Summer 2026",
+    coverImage: "/products/gap-cotton-gauze-barrel.avif",
     products: [
       {
         name: "Cotton Gauze Easy Barrel Pants",
@@ -224,6 +227,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/brown-pants",
     season: "Summer 2026",
+    coverImage: "/products/gap-cotton-gauze-barrel.avif",
     products: [
       {
         name: "Cotton Gauze Easy Barrel Pants",
