@@ -120,11 +120,48 @@ export const categories: Category[] = [
     ],
   },
   {
+    title: "Tall Gap Clothing",
+    subtitle: "Summer 2026",
+    href: "/gap-pants",
+    season: "Summer 2026",
+    products: [
+      {
+        name: "Cotton Gauze Easy Barrel Pants",
+        brand: "Gap",
+        image: "/products/gap-cotton-gauze-barrel.avif",
+        href: "https://www.gap.com/browse/product.do?pid=8776460320104&locale=en_US&vid=2#pdp-page-content",
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+      },
+      {
+        name: "Linen-Blend Easy Barrel Pants",
+        brand: "Gap",
+        image: "/products/gap-linen-blend-barrel.avif",
+        href: "https://www.gap.com/browse/product.do?pid=8776270220104&locale=en_US&vid=2#pdp-page-content",
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+      },
+    ],
+  },
+  {
     title: "Tall Brown Pants",
     subtitle: "Summer 2026",
     href: "/brown-pants",
     season: "Summer 2026",
-    products: [],
+    products: [
+      {
+        name: "Cotton Gauze Easy Barrel Pants",
+        brand: "Gap",
+        image: "/products/gap-cotton-gauze-barrel.avif",
+        href: "https://www.gap.com/browse/product.do?pid=8776460320104&locale=en_US&vid=2#pdp-page-content",
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+      },
+      {
+        name: "Linen-Blend Easy Barrel Pants",
+        brand: "Gap",
+        image: "/products/gap-linen-blend-barrel.avif",
+        href: "https://www.gap.com/browse/product.do?pid=8776270220104&locale=en_US&vid=2#pdp-page-content",
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+      },
+    ],
   },
   {
     title: "Tall Amazon Pants",
