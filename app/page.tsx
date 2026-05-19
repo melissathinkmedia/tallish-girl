@@ -7,6 +7,7 @@ const nav = [
     subtitle: c.subtitle,
     href: c.href,
     count: c.products.length,
+    coverImage: c.coverImage,
   })),
   {
     title: "Tall Pants — Master List",
@@ -15,6 +16,7 @@ const nav = [
     count: categories
       .filter((c) => c.season === "Summer 2026")
       .reduce((sum, c) => sum + c.products.length, 0),
+    coverImage: undefined,
   },
 ];
 
@@ -39,21 +41,36 @@ export default function Home() {
             <Link
               key={cat.href}
               href={cat.href}
-              className="bg-chalk border border-sand/40 hover:border-sand hover:bg-bone group flex items-center justify-between rounded-2xl p-6 transition-colors"
+              className="bg-chalk border border-sand/40 hover:border-sand hover:bg-bone group flex items-center gap-5 overflow-hidden rounded-2xl transition-colors"
             >
-              <div className="flex flex-col gap-1">
-                <div className="text-ink text-lg font-semibold tracking-tight">
-                  {cat.title}
-                </div>
-                <div className="text-ink-faint text-xs font-medium uppercase tracking-wider">
+              {/* Cover image */}
+              <div className="bg-bone h-36 w-24 shrink-0 overflow-hidden">
+                {cat.coverImage ? (
+                  <img
+                    src={cat.coverImage}
+                    alt={cat.title}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="h-full w-full bg-sand/20" />
+                )}
+              </div>
+
+              {/* Text */}
+              <div className="flex min-w-0 flex-1 flex-col gap-1 py-4">
+                <div className="text-sand text-xs font-semibold uppercase tracking-widest">
                   {cat.subtitle}
                   {cat.count > 0 && (
-                    <span className="text-sand ml-2">· {cat.count} items</span>
+                    <span className="text-sand/70 ml-2">· {cat.count} items</span>
                   )}
+                </div>
+                <div className="text-ink text-lg font-semibold leading-snug tracking-tight">
+                  {cat.title}
                 </div>
               </div>
 
-              <div className="text-sand group-hover:text-ink-soft shrink-0 transition-colors">
+              {/* Arrow */}
+              <div className="text-sand group-hover:text-ink-soft mr-6 shrink-0 transition-colors">
                 <svg
                   width="16"
                   height="16"

@@ -11,6 +11,7 @@ export type Category = {
   subtitle: string;
   href: string;
   season: string;
+  coverImage?: string;
   products: Product[];
 };
 
@@ -20,6 +21,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/asos-pants",
     season: "Summer 2026",
+    coverImage: "/products/asos-palazzo-pants-oyster.jpg.avif",
     products: [
       {
         name: "Tall Tailored Unstructured Palazzo Pants in Oyster",
@@ -66,6 +68,58 @@ export const categories: Category[] = [
     ],
   },
   {
+    title: "Tall Revolve Pants",
+    subtitle: "Summer 2026",
+    href: "/revolve-pants",
+    season: "Summer 2026",
+    coverImage: "/products/all-the-ways-larissa-satin-taupe.avif",
+    products: [
+      {
+        name: "Larissa Satin Pant in Taupe",
+        brand: "All The Ways",
+        image: "/products/all-the-ways-larissa-satin-taupe.avif",
+        href: "https://www.revolve.com/all-the-ways-larissa-satin-pant-in-taupe/dp/AAYR-WP31/",
+        tags: ["silk/satin pants", "high waist or slouchy", "relaxed leg", "cream", "brown", "summer 2026"],
+      },
+    ],
+  },
+  {
+    title: "Tall Express Pants",
+    subtitle: "Summer 2026",
+    href: "/express-pants",
+    season: "Summer 2026",
+    products: [
+      {
+        name: "Low Slung Ivory Baggy Jeans",
+        brand: "Express",
+        image: "/products/express-low-slung-ivory-baggy.jpg",
+        href: "https://www.express.com/clothing/men/Low-Slung-Ivory-Baggy-Jeans/pro/06713264/color/Ivory/e/regular/",
+        tags: ["low rise", "31.5\" inseam", "relaxed leg", "cream", "summer 2026"],
+      },
+      {
+        name: "Low Slung Medium Wash Baggy Jeans",
+        brand: "Express",
+        image: "/products/express-low-slung-medium-wash-baggy.jpg",
+        href: "https://www.express.com/clothing/men/Low-Slung-Medium-Wash-Baggy-Jeans/pro/06712997/color/Medium%20Wash/e/regular/",
+        tags: ["wide leg", "low rise", "31.5\" inseam", "summer 2026"],
+      },
+      {
+        name: "High Waisted Light Wash Relaxed Wide Leg Jeans",
+        brand: "Express",
+        image: "/products/express-high-waist-light-wash-wide-leg.jpg",
+        href: "https://www.express.com/clothing/men/High-Waisted-Light-Wash-Relaxed-Wide-Leg-Jeans/pro/07029411/color/Light%20wash/e/regular/",
+        tags: ["wide leg", "high rise", "33\" inseam", "summer 2026"],
+      },
+      {
+        name: "High Waisted Relaxed Wide Leg Stretch Jeans",
+        brand: "Express",
+        image: "/products/express-high-waist-wide-leg-stretch.jpg",
+        href: "https://www.express.com/clothing/men/High-Waisted-Relaxed-Wide-Leg-Stretch-Jeans/pro/07023272/color/Light%20Wash/e/regular/",
+        tags: ["wide leg", "high rise", "33.5\" inseam", "summer 2026"],
+      },
+    ],
+  },
+  {
     title: "Tall Brown Pants",
     subtitle: "Summer 2026",
     href: "/brown-pants",
@@ -84,6 +138,7 @@ export const categories: Category[] = [
     subtitle: "Summer 2026",
     href: "/silk-satin-pants",
     season: "Summer 2026",
+    coverImage: "/products/all-the-ways-larissa-satin-taupe.avif",
     products: [
       {
         name: "Larissa Satin Pant in Taupe",
