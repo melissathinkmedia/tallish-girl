@@ -9,7 +9,7 @@ const nav = [
     count: categories
       .filter((c) => c.season === "Summer 2026")
       .reduce((sum, c) => sum + c.products.length, 0),
-    coverImage: undefined,
+    coverImage: "/products/asos-palazzo-pants-oyster.jpg.avif",
   },
   ...categories.map((c) => ({
     title: c.title,
