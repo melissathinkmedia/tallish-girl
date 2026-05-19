@@ -49,7 +49,7 @@ export const categories: Category[] = [
         brand: "Only Tall",
         image: "/products/only-tall-linen-look-brown.png",
         href: "https://www.asos.com/us/only-tall/only-tall-wide-leg-linen-look-pants-in-brown/prd/209956241?ctaRef=my+orders",
-        tags: ["33\" inseam", "linen pants", "brown", "summer 2026", "relaxed leg"],
+        tags: ["31\" inseam", "linen pants", "brown", "summer 2026", "relaxed leg"],
       },
       {
         name: "Tall High Rise Wide Leg Tailored Pants in Cream",
