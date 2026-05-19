@@ -1,18 +1,20 @@
-import ProductCard from "@/components/ProductCard";
+import Link from "next/link";
+import { categories } from "@/lib/products";
 
-// Add products here — images go in /public/products/
-const products = [
+const nav = [
+  ...categories.map((c) => ({
+    title: c.title,
+    subtitle: c.subtitle,
+    href: c.href,
+    count: c.products.length,
+  })),
   {
-    name: "Tall Tailored Unstructured Palazzo Pants in Oyster",
-    brand: "ASOS Design",
-    image: "/products/asos-palazzo-pants-oyster.jpg.avif",
-    href: "https://www.asos.com/us/asos-design/asos-design-tall-tailored-unstructured-palazzo-pants-in-oyster-part-of-a-set/prd/209383758?ctaRef=my+orders",
-  },
-  {
-    name: "Tall Linen Mix Pull-On Pants in Stone",
-    brand: "ASOS Design",
-    image: "/products/asos-linen-pants-stone.jpg.avif",
-    href: "https://www.asos.com/us/asos-tall/asos-design-tall-linen-mix-pull-on-pants-in-stone/prd/207771354?ctaRef=my+orders",
+    title: "Tall Pants — Master List",
+    subtitle: "Summer 2026",
+    href: "/master-list",
+    count: categories
+      .filter((c) => c.season === "Summer 2026")
+      .reduce((sum, c) => sum + c.products.length, 0),
   },
 ];
 
@@ -33,8 +35,39 @@ export default function Home() {
 
       <main className="mx-auto w-full max-w-2xl flex-1 px-6 pb-20 sm:px-10">
         <div className="flex flex-col gap-4">
-          {products.map((product) => (
-            <ProductCard key={product.href} product={product} />
+          {nav.map((cat) => (
+            <Link
+              key={cat.href}
+              href={cat.href}
+              className="bg-chalk border border-sand/40 hover:border-sand hover:bg-bone group flex items-center justify-between rounded-2xl p-6 transition-colors"
+            >
+              <div className="flex flex-col gap-1">
+                <div className="text-ink text-lg font-semibold tracking-tight">
+                  {cat.title}
+                </div>
+                <div className="text-ink-faint text-xs font-medium uppercase tracking-wider">
+                  {cat.subtitle}
+                  {cat.count > 0 && (
+                    <span className="text-sand ml-2">· {cat.count} items</span>
+                  )}
+                </div>
+              </div>
+
+              <div className="text-sand group-hover:text-ink-soft shrink-0 transition-colors">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </div>
+            </Link>
           ))}
         </div>
       </main>
