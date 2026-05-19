@@ -1,4 +1,3 @@
-// Add products here — images go in /public/products/
 const products = [
   {
     name: "Tall Tailored Unstructured Palazzo Pants in Oyster",
@@ -14,7 +13,7 @@ const products = [
   },
 ];
 
-export default function Home() {
+export default function AsosPants() {
   return (
     <div className="bg-cream text-ink flex min-h-screen flex-col">
       <header className="mx-auto flex w-full max-w-2xl flex-col items-center gap-2 px-6 py-10 text-center sm:px-10">
@@ -22,10 +21,10 @@ export default function Home() {
           as seen in my videos
         </div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Tallish Girl
+          ASOS Tall Summer Pants
         </h1>
         <p className="text-ink-soft mt-1 text-sm leading-6 max-w-xs">
-          Everything I&apos;ve linked — tall-girl tested, honest opinions.
+          Tall-girl tested, honest opinions.
         </p>
       </header>
 
@@ -33,13 +32,12 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           {products.map((product) => (
             <a
-              key={product.href + product.name}
+              key={product.href}
               href={product.href}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-chalk border border-sand/40 hover:border-sand hover:bg-bone group flex items-center gap-5 rounded-2xl p-4 transition-colors"
             >
-              {/* Product image */}
               <div className="bg-bone relative h-20 w-20 shrink-0 overflow-hidden rounded-xl">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -52,7 +50,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* Text */}
               <div className="flex min-w-0 flex-1 flex-col gap-0.5">
                 <div className="text-ink-faint text-xs font-medium uppercase tracking-wider">
                   {product.brand}
@@ -62,7 +59,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Arrow */}
               <div className="text-sand group-hover:text-ink-soft shrink-0 transition-colors">
                 <svg
                   width="16"
