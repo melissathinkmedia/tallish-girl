@@ -183,14 +183,14 @@ export const categories: Category[] = [
         brand: "Gap",
         image: "/products/gap-cotton-gauze-barrel.avif",
         href: "https://www.gap.com/browse/product.do?pid=8776460320104&locale=en_US&vid=2#pdp-page-content",
-        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
         name: "Linen-Blend Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-linen-blend-barrel.avif",
         href: "https://www.gap.com/browse/product.do?pid=8776270220104&locale=en_US&vid=2#pdp-page-content",
-        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
         name: "100% Linen Oversized Button-Down Shirt",
@@ -234,14 +234,14 @@ export const categories: Category[] = [
         brand: "Gap",
         image: "/products/gap-cotton-gauze-barrel.avif",
         href: "https://www.gap.com/browse/product.do?pid=8776460320104&locale=en_US&vid=2#pdp-page-content",
-        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
         name: "Linen-Blend Easy Barrel Pants",
         brand: "Gap",
         image: "/products/gap-linen-blend-barrel.avif",
         href: "https://www.gap.com/browse/product.do?pid=8776270220104&locale=en_US&vid=2#pdp-page-content",
-        tags: ["barrel leg", "high or low rise", "brown", "linen", "summer 2026", "lightweight"],
+        tags: ["barrel leg", "high or low rise", "brown", "linen", "29\" inseam", "summer 2026", "lightweight"],
       },
       {
         name: "Relaxed Pull-On Pants in Espresso",
