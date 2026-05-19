@@ -4,13 +4,13 @@ const products = [
   {
     name: "Tall Tailored Unstructured Palazzo Pants in Oyster",
     brand: "ASOS Design",
-    image: "/products/asos-palazzo-pants-oyster.jpg",
+    image: "/products/asos-palazzo-pants-oyster.jpg.avif",
     href: "https://www.asos.com/us/asos-design/asos-design-tall-tailored-unstructured-palazzo-pants-in-oyster-part-of-a-set/prd/209383758?ctaRef=my+orders",
   },
   {
     name: "Tall Linen Mix Pull-On Pants in Stone",
     brand: "ASOS Design",
-    image: "/products/asos-linen-pants-stone.jpg",
+    image: "/products/asos-linen-pants-stone.jpg.avif",
     href: "https://www.asos.com/us/asos-tall/asos-design-tall-linen-mix-pull-on-pants-in-stone/prd/207771354?ctaRef=my+orders",
   },
 ];
