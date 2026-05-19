@@ -2,15 +2,8 @@ import Link from "next/link";
 import { categories } from "@/lib/products";
 
 const nav = [
-  ...categories.map((c) => ({
-    title: c.title,
-    subtitle: c.subtitle,
-    href: c.href,
-    count: c.products.length,
-    coverImage: c.coverImage,
-  })),
   {
-    title: "Tall Pants — Master List",
+    title: "All Summer 2026 Tall Clothing",
     subtitle: "Summer 2026",
     href: "/master-list",
     count: categories
@@ -18,6 +11,13 @@ const nav = [
       .reduce((sum, c) => sum + c.products.length, 0),
     coverImage: undefined,
   },
+  ...categories.map((c) => ({
+    title: c.title,
+    subtitle: c.subtitle,
+    href: c.href,
+    count: c.products.length,
+    coverImage: c.coverImage,
+  })),
 ];
 
 export default function Home() {

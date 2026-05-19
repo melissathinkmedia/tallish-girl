@@ -19,7 +19,7 @@ export default function MasterList() {
           Summer 2026
         </div>
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Tall Pants — Master List
+          All Summer 2026 Tall Clothing
         </h1>
         <p className="text-ink-soft mt-1 text-sm leading-6 max-w-xs">
           Every pant from every category, all in one place.
